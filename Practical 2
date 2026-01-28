@@ -217,7 +217,7 @@ INSERT INTO CLASSROOM (building, room_number, capacity) VALUES ('Darwin', '2110'
 update instructor set salary = salary + salary *10/100 where dept_id = (select dept_id from department where name = 'Computer Science');
 
 
-update instructor set salary = salary + salary * 0.5 where salary < 80000;
+update instructor set salary = salary + salary * 0.05 where salary < 80000;
 
 insert into course (course_id, title, dept_id, credits)
 	values('CS-001', 'weekly seminar', 1,1);
